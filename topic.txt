@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------------
+                Session : 11
+Serializers :  The process of converting complex type(like model instance or query set) to python native data like types(dict)
+
+
+the job of Serializers is to convert one form to another form.
+
+it is responsible for 3 activities:
+
+a) Serialization
+b) Deserialization
+c) Validation
+
+will work very similar to forms and model forms
+
+Meta : means extra information
+
+render :  means Conversion
+
+-----------------------------------------------------------------------------------------
+
+                Session: 12
+Deserialization : The process of converting python native data into data base supported complex type, called Deserialization.
+
+Use case od Serialization and Deserialization::
+1) Partner application want all employee record in json format
+    qs -> python native data(serialization)
+    python native data -> json data(JSONRenderer().render())
+
+2) partner application sending json data to create a new employee json data -> python native data(JSONParser().parse())
+    python native data type -> data base supported complex form(Deserialization)
+
+
+    instance means already existing objects
+
+
